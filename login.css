@@ -1,0 +1,95 @@
+body{
+    background-image: url("h1_hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+
+.login-form{
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    margin-left: 25%;
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.header{
+    text-align: center;
+}
+
+.header h1{ 
+    color: #140C40;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header p{
+    color: gray;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    width: 40vw;
+}
+
+.username input{
+    padding: 15px;
+    width: 100%;
+    border-color: lightgray;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    line-height: 6;
+    align-items: center;
+}
+
+.login a{
+    color: #FD8F5F;
+    text-decoration: none;
+}
+
+.login label input :checked{
+    color: #FD8F5F;
+}
+
+.log{
+    display: flex;
+    justify-content: space-between;
+    line-height: 10;
+    align-items: center;
+}
+
+.log a{
+    text-decoration: none;
+    color: #FD8F5F;
+}
+
+.log button{
+    padding: 20px 43px;
+    background-color: #FD8F5F;
+    border: none;
+    transition: 0.3s ease-in-out;
+
+}
+
+.log button a{
+    color: white;
+}
+
+.log button:hover{
+    background-color: #FD8F5F;
+    color: #FD8F5F;
+    /* border: 1px solid #FD8F5F; */
+    transform: scale(1.05);
+}

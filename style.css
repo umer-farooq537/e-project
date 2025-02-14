@@ -1,0 +1,376 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(242, 225, 217);
+}
+.image img{
+    width: 150px;
+    height: 100px;
+}
+.list{
+    width: 40%;
+
+}
+.list-2{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.list ul li a:hover,.list-2 ul li a:hover{
+    color: #f4a261;
+    text-decoration: none;
+}
+.list ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search{
+    display: flex;
+    width: 20%;
+    /* padding-right: 50px; */
+}
+.search input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: rgb(242, 225, 217);
+}
+
+.search button{
+    border: none;
+    background: none;
+    border-bottom: 2px solid grey;
+    
+}
+.search button:hover{
+    color: #FD8F5F;
+}
+
+.list-2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    padding: 39px 70px 56px 68px;
+    width: 45%;
+    margin-left: 25px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+   
+}
+
+.main{
+    height: 100vh;
+    background-image: url("h1_hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+}
+
+.hero h4{
+    font-size: 30px;
+    color: gray;
+}
+
+.hero h1{
+    font-size: 50px;
+
+}
+
+.hero span{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.hero button{
+    border: none;
+    background: #FD8F5F;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+
+    
+}
+
+.hero button:hover{
+    background-color: white;
+    color: #FD8F5F;
+    border: 1px solid #FD8F5F;
+    transform: scale(1.05);
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+
+.products h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 20px;
+}
+
+.products span{
+    color: gray;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30PX;
+    /* border: 1px solid black; */
+}
+
+.sofa-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 10px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 10px 10px 15px lightgray;
+
+}
+
+.sofa-cards p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sofa-cards span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #670000;
+}
+
+.banner{
+    display: flex;
+    background: rgb(242, 225, 217);
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.banner-1 img{
+    width: 85%;
+}
+
+.banner-2{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   line-height: 0;
+   padding-right: 50px;
+}
+
+.banner-2 h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.banner-2 p{
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.banner-2 button{
+    border: none;
+    background: #FD8F5F;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+.banner-2 button:hover{
+    background-color: white;
+    color: #FD8F5F;
+    border: 1px solid #FD8F5F;
+    transform: scale(1.05);
+
+}
+.banner-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.insta{
+    width: 25%;
+    padding-left: 30px;
+}
+.insta h1{
+    font-size:50px;
+    line-height: 20px;
+}
+
+.insta p{
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+.pic-1{
+    display: flex;
+}
+
+.insta button{
+    padding: 15px;
+    width: 80%;
+    border: none;
+    background: #FD8F5F;
+    color: white;
+    transition: 0.3s ease-in-out;
+    
+}
+.insta button:hover{
+    background-color: white;
+    color: #FD8F5F;
+    border: 1px solid #FD8F5F;
+    transform: scale(1.05);
+}
+.pic-1 img{
+    width: 50%;
+}
+
+.footer {
+    background-color: #1D2547;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+
+
+.footer-links ul {
+   line-height: 2.5;
+   padding-right: 50px;
+}
+
+.footer-links ul li {
+    display: flex;
+    margin: 0 15px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+
+.footer-links h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-social ul li a {
+    color: #C2C5DB;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+    color: #f4a261;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        margin-top: 20px;
+    }
+
+    .footer-links ul li {
+        margin: 5px 0;
+    }
+}
