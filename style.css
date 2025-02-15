@@ -189,12 +189,41 @@ body{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 20px;
-}
+    animation: myAnim 2s ease 0s 1 normal forwards;
 
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
 .products span{
     color: gray;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .cards{
@@ -224,7 +253,7 @@ body{
 
 .sofa-cards:hover{
     transform: rotateY(360deg);
-    transition: 2s;
+    transition: 2.5s;
 }
 
 .sofa-cards{
@@ -380,7 +409,9 @@ body{
     background-color: white;
     color: #FD8F5F;
     border: 1px solid #FD8F5F;
-    transform: skew(-10deg,-10deg);
+    /* transform: skew(-10deg,-10deg); */
+    transform:rotateX(360deg);
+    transition: 2s;
 }
 .pic-1 img{
     width: 50%;
