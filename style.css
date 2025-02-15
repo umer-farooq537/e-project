@@ -74,6 +74,7 @@ body{
 .list-2 ul li a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .list-2 ul {
@@ -150,6 +151,7 @@ body{
     margin-top: 30px;
     letter-spacing: 1px;
     transition: 0.3s ease-in-out;
+    cursor: not-allowed;
 
     
 }
