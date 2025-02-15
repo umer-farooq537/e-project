@@ -22,6 +22,8 @@ body {
     top: 0;
     left: 0;
     z-index: 999;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    
 }
 .image img{
     width: 150px;
@@ -251,4 +253,16 @@ body {
     .footer-links ul li {
         margin: 5px 0;
     }
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

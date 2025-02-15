@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-
+    
 }
 
 .navbar{
@@ -13,6 +13,7 @@ body{
     top: 0;
     left: 0;
     z-index: 999;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 .image img{
     width: 150px;
@@ -162,6 +163,7 @@ body{
         scale: 1;
     }
 }
+
 .sofa-cards{
     display: flex;
     justify-content: center;
@@ -173,6 +175,11 @@ body{
     padding: 30px;
     box-shadow: 10px 10px 15px lightgray;
 }
+.sofa-cards:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
 
 .sofa-cards p{
     font-weight: bold;
@@ -215,7 +222,7 @@ body{
 .footer-links ul {
    line-height: 2.5;
    padding-right: 50px;
-
+   
    /* text-align: center; */
 }
 
@@ -276,12 +283,25 @@ body{
         flex-direction: column;
         text-align: center;
     }
-
+    
     .footer-links ul {
         margin-top: 20px;
     }
-
+    
     .footer-links ul li {
         margin: 5px 0;
+    }
+}
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(100deg);
+        transform-origin: bottom;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+        transform-origin: bottom;
     }
 }

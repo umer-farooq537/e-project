@@ -20,6 +20,8 @@ body{
     padding-top: 10px;
     margin-top: 30px;
     margin-bottom: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
 }
 .header{
     text-align: center;
@@ -92,4 +94,18 @@ body{
     color: #FD8F5F;
     /* border: 1px solid #FD8F5F; */
     transform: scale(1.05);
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(100deg);
+        transform-origin: bottom;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+        transform-origin: bottom;
+    }
 }

@@ -13,6 +13,7 @@ body{
     top: 0;
     left: 0;
     z-index: 999;
+    animation: myAnim 1s ease 0ms 1 normal forwards;
 }
 .image img{
     width: 150px;
@@ -202,6 +203,8 @@ body{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    
+
 }
 
 @keyframes appear {
@@ -215,6 +218,11 @@ body{
     }
 
     /* border: 1px solid black; */
+}
+
+.sofa-cards:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
 }
 
 .sofa-cards{
@@ -313,7 +321,8 @@ body{
     background-color: white;
     color: #FD8F5F;
     border: 1px solid #FD8F5F;
-    transform: scale(1.05);
+    transform: skew(-10deg, -10deg);
+
 
 }
 .banner-3{
@@ -369,7 +378,7 @@ body{
     background-color: white;
     color: #FD8F5F;
     border: 1px solid #FD8F5F;
-    transform: scale(1.05);
+    transform: skew(-10deg,-10deg);
 }
 .pic-1 img{
     width: 50%;
@@ -466,4 +475,15 @@ body{
     .footer-links ul li {
         margin: 5px 0;
     }
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
